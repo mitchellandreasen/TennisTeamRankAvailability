@@ -45,12 +45,12 @@ public class Program {
 				}				
 				
 				int j = 0;
-				while(data[j+7] != null) {
+				while(data[j+7] != null) {//fix the array out of bounds error that occurs here
 					if(data[j+7] == "1") {
 						availability[j] = 1;
 					}
 					else {
-					availability[j] = 0;	
+						availability[j] = 0;	
 					}
 					j++;
 				}
